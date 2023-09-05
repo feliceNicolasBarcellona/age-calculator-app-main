@@ -2,6 +2,7 @@ import { Fragment, useState } from "react";
 import "./App.css";
 import Card from "./components/UI/Card";
 import UserInput from "./components/UserInput/UserInput";
+import ResultOutput from "./components/ResultOutput/ResultOutput";
 
 function App() {
   const [yearsPassed, setYearsPassed] = useState("- -");
@@ -57,18 +58,9 @@ function App() {
         <Card>
           <UserInput onFormSubmit={handleFormSubmit} />
           <div className="output-container">
-            <div className="output">
-              <span>{yearsPassed}</span>
-              <p>years</p>
-            </div>
-            <div className="output">
-              <span>{monthsPassed}</span>
-              <p>months</p>
-            </div>
-            <div className="output">
-              <span>{daysPassed}</span>
-              <p>days</p>
-            </div>
+            <ResultOutput data={yearsPassed} label="years" />
+            <ResultOutput data={monthsPassed} label="months" />
+            <ResultOutput data={daysPassed} label="days" />
           </div>
         </Card>
       </main>
