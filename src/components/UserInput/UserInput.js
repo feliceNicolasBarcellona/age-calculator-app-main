@@ -1,5 +1,6 @@
 import classes from "./UserInput.module.css";
 import { useState } from "react";
+import Button from '../UI/Button'
 
 const UserInput = (props) => {
   const [enteredDay, setEnteredDay] = useState("");
@@ -181,9 +182,9 @@ const UserInput = (props) => {
           <p className={classes["error-message"]}>{errorYearMessage}</p>
         )}
       </div>
-      <button>
+      <Button type>
         <img src="images/icon-arrow.svg" alt="icon-arrow" />
-      </button>
+      </Button>
     </form>
   );
 };

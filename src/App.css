@@ -16,22 +16,6 @@ main {
   justify-content: space-between;
 }
 
-.output {
-  display: flex;
-  font-style: italic;
-  font-size: 101px;
-  font-weight: 800;
-}
-
-.output span {
-  color: hsl(259, 100%, 65%);
-}
-
-.output p {
-  color: hsl(0, 0%, 8%);
-  margin: 0 0 0 10px;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -44,17 +28,5 @@ main {
   main {
     max-width: 480px;
     height: 812px;
-  }
-
-  .output-container {
-    margin: 63px 0 0 0;
-  }
-
-  .output {
-    font-size: 52px;
-  }
-
-  .output p {
-    margin: 0 0 0 15px;
   }
 }
