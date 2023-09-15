@@ -182,7 +182,7 @@ const UserInput = (props) => {
           <p className={classes["error-message"]}>{errorYearMessage}</p>
         )}
       </div>
-      <Button type>
+      <Button type="submit">
         <img src="images/icon-arrow.svg" alt="icon-arrow" />
       </Button>
     </form>
