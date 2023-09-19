@@ -29,4 +29,9 @@ main {
     max-width: 480px;
     height: 812px;
   }
+
+  .attribution {
+    font-size: 10px;
+    text-align: center;
+  }
 }
